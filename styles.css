@@ -1,0 +1,319 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #534f61;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Header styling */
+  header {
+    width: 100%;
+    background-color: #972e90;
+    padding: 30px 0;
+    text-align: center;
+    color: white;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+}
+
+  h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  /* Main container with two columns */
+  .main-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .left-column, .right-column {
+    width: 48%;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    animation: fadeInUp 1s ease-in-out;
+    background: linear-gradient(to right, #ffffff, #f9f9f9);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Left column styling */
+  .left-column {
+    background: linear-gradient(to bottom right, #ffffff, #e0e0e0);
+  }
+  
+  /* Right column styling */
+  .right-column {
+    background: linear-gradient(to bottom right, #ffffff, #e0f7fa);
+  }
+  
+  /* Add hover effect */
+  .left-column:hover, .right-column:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Styling for headings in columns */
+  .left-column h2, .right-column h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #282329;
+  }
+  
+  /* Left column: Personal info styling */
+  .left-column p, .left-column ul {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .left-column a {
+    color: #bf50a5;
+    text-decoration: none;
+  }
+  
+  .left-column a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Right column: Styling login form */
+  .right-column h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  button {
+    background-color: #b34c99;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: #b14b98;
+    transform: scale(1.05);
+  }
+  
+  .show-password {
+    margin-top: 10px;
+  }
+  
+  .spinner {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  #message {
+    text-align: center;
+    color: purple;
+    margin-top: 10px;
+  }
+  
+  /* Footer styling */
+  footer {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    width: 100%;
+  }
+  
+  /* Media query for mobile responsiveness */
+  @media (max-width: 768px) {
+    .main-container {
+      flex-direction: column;
+    }
+  
+    .left-column, .right-column {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Fade in animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* General body styling with background image */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('purple.png') no-repeat center center fixed; /* Replace with your image path */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header styling with shadows and more space */
+header {
+    width: 100%;
+    background-color: rgba(151, 46, 144, 0.85); /* Semi-transparent */
+    padding: 40px 0;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow for a better effect */
+}
+
+h1 {
+    margin: 0;
+    font-size: 32px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Add text-shadow */
+    font-weight: bold;
+}
+
+/* Main container with two columns */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px; /* Wider container */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Box shadow for the main container */
+    margin-top: 20px;
+}
+
+.left-column, .right-column {
+    width: 48%;
+    padding: 30px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(to bottom right, #fff, #f9f9f9);
+}
+
+/* Add hover effect with more prominence */
+.left-column:hover, .right-column:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Header for columns */
+.left-column h2, .right-column h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Button styling with animations */
+button {
+    background-color: #b34c99;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    background-color: #8a3577;
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer styling */
+footer {
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+/* Add smooth fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.main-container {
+    animation: fadeIn 1s ease-in-out;
+}

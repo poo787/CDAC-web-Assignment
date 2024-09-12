@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pooja_Shembale (Awak_Task)</title>
+  <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+      <h1>Welcome to My Login Page </h1>
+    </nav>
+  </header>
+
+  <div class="main-container">
+    <!-- Left column: Thank you message and personal details -->
+    <div class="left-column">
+      <h2>Thank You, Awak AI Recruitment Team</h2>
+      <p>Thank you for giving me the opportunity to show my work. Below are my details:</p>
+      <ul>
+        <li><strong>Name:</strong> Pooja shembale</li>
+        <li><strong>PRN No:</strong> 240350120099</li>
+        <li><strong>Phone No:</strong> 9112841717</li>
+        <li><strong>Email ID:</strong> pooja.shembale2025@gmail.com@gmail.com</li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pooja-shembale-853606278/" target="_blank">LinkedIn Profile</a></li>
+      </ul>
+    </div>
+
+    <!-- Right column: Login Form -->
+    <div class="right-column">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <div class="input-group">
+          <label for="username">Username/Email:</label>
+          <input type="text" id="username" name="username" placeholder="Enter your email" required>
+        </div>
+        <div class="input-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          <div class="show-password">
+            <input type="checkbox" id="showPassword"> Show Password
+          </div>
+        </div>
+        <div class="input-group remember-me">
+          <input type="checkbox" id="rememberMe" name="rememberMe">
+          <label for="rememberMe">Remember Me</label>
+        </div>
+        <button type="submit">Login</button>
+        <div id="spinner" class="spinner" style="display: none;">Loading...</div>
+      </form>
+      <div id="message"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Designed by Pooja Shembale. Excited for your response Awak Team.......</p>
+  </footer>
+
+  <script src="Script.js"></script>
+</body>
+</html>
